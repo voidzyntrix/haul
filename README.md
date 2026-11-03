@@ -1,6 +1,6 @@
 # Haul
 
-Paste a link, keep the video. Haul saves video and audio from YouTube, TikTok, Instagram, Facebook, X, Reddit, Vimeo and a thousand more sites, on your own phone or computer: no server in between, no account, no tracking.
+Paste a link, keep the video. Haul saves video and audio from TikTok, Instagram, Facebook, X, Reddit, Vimeo and a thousand more sites, on your own phone or computer: no server in between, no account, no tracking.
 
 This repository holds the website, **https://voidzyntrix.github.io/haul/**, and the downloads:
 
