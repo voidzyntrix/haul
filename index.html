@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Haul — save any video</title>
+  <meta name="description" content="Paste a link, keep the video. Haul saves video and audio from YouTube, TikTok, Instagram, Facebook and a thousand more sites, on your own phone or computer.">
+  <!-- A static page: no analytics, no fonts, no CDNs, no third-party scripts, and it connects to nothing. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3ede2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#090c11" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script src="theme-boot.js"></script>
+  <link rel="stylesheet" href="landing.css">
+  <script type="module" src="landing.js"></script>
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true" focusable="false" class="sprite">
+    <defs>
+      <symbol id="i-mark" viewBox="0 0 24 24"><path d="M12 3.5v10"/><path d="M8 9.8l4 4 4-4"/><path d="M4.5 15v3a1.8 1.8 0 0 0 1.8 1.8h11.4a1.8 1.8 0 0 0 1.8-1.8v-3"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.8"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 14.2A7.6 7.6 0 0 1 9.8 4.5a7.6 7.6 0 1 0 9.7 9.7z"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M7 12h10"/></symbol>
+    </defs>
+  </svg>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Haul">
+      <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-mark"/></svg></span>
+      <span class="brand-word">haul</span>
+    </a>
+    <nav class="nav" aria-label="On this page">
+      <a href="#get">Download</a>
+      <a href="#plans">Plans</a>
+      <a href="#privacy">Privacy</a>
+      <button id="btn-theme" class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark" title="Light / dark">
+        <svg class="icon sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow"><span>Video &amp; audio downloader</span><span class="eyebrow-sep" aria-hidden="true"></span><span>runs on your device</span></p>
+      <h1>Paste a link.<br><em>Keep</em> the video.</h1>
+      <p class="lede">YouTube, TikTok, Instagram, Facebook, X, Reddit, Vimeo and a thousand more sites. Haul fetches them on your own phone or computer: no servers in between, no account, no tracking.</p>
+      <div class="cta">
+        <a id="cta-main" class="btn primary big" href="#get"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Get Haul</span></a>
+        <a class="btn big" href="#get">All platforms</a>
+      </div>
+      <p id="cta-note" class="note" hidden></p>
+    </section>
+
+    <section class="steps reveal" aria-label="How it works">
+      <ol>
+        <li><span class="n">1</span><strong>Paste or share a link</strong><span>Paste it into Haul, or use Share in YouTube, TikTok or Instagram on Android and pick Haul.</span></li>
+        <li><span class="n">2</span><strong>Pick video or audio</strong><span>Choose a quality, see the size before you start. Playlists become a checklist.</span></li>
+        <li><span class="n">3</span><strong>It lands in Downloads</strong><span>Saved in your Downloads/Haul folder, ready to play anywhere.</span></li>
+      </ol>
+    </section>
+
+    <section id="get" class="block reveal" aria-labelledby="get-title">
+      <h2 id="get-title">Download</h2>
+      <ul class="platforms">
+        <li data-os="android">
+          <strong>Android</strong>
+          <span>Android 10 or newer, 64-bit. Free with 5 downloads a day, or one payment for more.</span>
+          <a class="btn primary" href="https://play.google.com/store/apps/details?id=io.github.voidzyntrix.haul" rel="noopener">Get it on Google Play</a>
+        </li>
+        <li data-os="windows">
+          <strong>Windows</strong>
+          <span>Windows 10 and 11. One program, no installer. Free and unlimited.</span>
+          <a class="btn" href="https://github.com/voidzyntrix/haul/releases/latest/download/Haul-Windows.exe" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Haul-Windows.exe</a>
+        </li>
+        <li data-os="macos">
+          <strong>macOS</strong>
+          <span>The app in a zip. The first time, right-click it and choose Open. Free and unlimited.</span>
+          <a class="btn" href="https://github.com/voidzyntrix/haul/releases/latest/download/Haul-macOS.zip" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Haul-macOS.zip</a>
+        </li>
+        <li data-os="linux">
+          <strong>Linux</strong>
+          <span>Extract it and run ./Haul. Free and unlimited.</span>
+          <a class="btn" href="https://github.com/voidzyntrix/haul/releases/latest/download/Haul-Linux.tar.gz" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Haul-Linux.tar.gz</a>
+        </li>
+      </ul>
+      <p class="muted">iPhone and iPad: iOS doesn't allow an app like this, so there is no Haul for them. The computer apps aren't signed by a publisher yet, so Windows and macOS ask you once to confirm you want to open them.</p>
+    </section>
+
+    <section id="plans" class="block reveal" aria-labelledby="plans-title">
+      <h2 id="plans-title">Plans for Android</h2>
+      <p class="muted">Each plan is a single payment through Google Play, not a subscription. Upgrading later costs only the difference. Prices are in US dollars; Google Play shows yours.</p>
+      <div class="plan-scroll">
+        <table class="plans">
+          <thead>
+            <tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">Free</th><th scope="col">Plus<span>$0.99</span></th><th scope="col">Pro<span>$1.99</span></th><th scope="col">Max<span>$2.99</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Downloads a day</th><td>5</td><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td></tr>
+            <tr><th scope="row">At the same time</th><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+            <tr><th scope="row">Quality up to</th><td>720p</td><td>1080p</td><td>1440p</td><td>Best (4K, 8K)</td></tr>
+            <tr><th scope="row">Playlists and batches</th><td class="no">–</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">Audio only (MP3, M4A)</th><td class="no">–</td><td class="no">–</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">Subtitles</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">Cover art, tags, Wi-Fi only</th><td class="no">–</td><td class="no">–</td><td class="no">–</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">Badge on the app icon</th><td class="no">–</td><td>•</td><td>••</td><td>•••</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">The Windows, macOS and Linux apps have no plans: everything is free and unlimited.</p>
+    </section>
+
+    <section id="privacy" class="block reveal" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Nothing leaves your device</h2>
+      <ul class="bullets">
+        <li><strong>No server in between.</strong> The engine (yt-dlp and ffmpeg) runs inside the app. Your links go straight from your device to the site that hosts the video, and nowhere else.</li>
+        <li><strong>No account, no analytics, no ads.</strong> Haul keeps no history of what you download. Your settings stay on the device.</li>
+        <li><strong>Purchases go through Google Play.</strong> Haul never sees your payment details; Google Play only tells the app which plan your account owns.</li>
+        <li><strong>This page is just as quiet.</strong> It loads no fonts, scripts or images from anywhere else, and its security policy stops it from connecting to anything.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Save only what you have the right to keep, and respect each site's rules and the people who made the video. Haul does not save DRM-protected streams.</p>
+    <p class="fine">Haul uses <a href="https://github.com/yt-dlp/yt-dlp" rel="noopener">yt-dlp</a> and <a href="https://ffmpeg.org/" rel="noopener">ffmpeg</a>, which are separate projects under their own licences.</p>
+  </footer>
+</body>
+</html>
